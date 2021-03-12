@@ -63,7 +63,6 @@ if for_loops:
             best_configs1 = best1[np.where(best1[:,0]==selection1)]
             mean_probs1 = np.mean(best_configs1,axis=0)[1:]
             if selection1 == -1:
-                print("s1")
                 continue
             try:
                 best0[idx0] = mean_probs1[0], mean_probs1[0],mean_probs1[1],mean_probs1[2],mean_probs1[3],mean_probs1[-4],mean_probs1[-3],mean_probs1[-2],mean_probs1[-1]
